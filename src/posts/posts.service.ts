@@ -32,7 +32,6 @@ export class PostService {
     id: number,
     page: number,
     size: number,
-    search: string,
   ) {
     const skip = page * size;
     const [comments, count] = await this.commentsRepository.findAndCount({
